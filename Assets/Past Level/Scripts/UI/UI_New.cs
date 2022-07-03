@@ -1,0 +1,13 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class UI_New : MonoBehaviour
+{
+    public void OnClick()
+    {
+        Save.lv = Save.cheatCode = 0;Save.jumpTime = 1;
+        SceneManager.LoadScene("Past Level");
+    }
+}
