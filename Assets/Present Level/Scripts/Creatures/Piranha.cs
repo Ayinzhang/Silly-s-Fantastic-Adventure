@@ -33,6 +33,6 @@ public class Piranha : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-         if(!isAttack) StartCoroutine("Attack");
+        if (!isAttack && other.tag == "Player") StartCoroutine("Attack");
     }
 }
