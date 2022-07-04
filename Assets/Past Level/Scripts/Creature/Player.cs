@@ -68,6 +68,8 @@ public class Player : MonoBehaviour
     {
         if (isDead) return;
         //Cheat
+        if (Input.GetKeyDown(KeyCode.Alpha1)) lv ++;
+        else if (Input.GetKeyDown(KeyCode.Alpha0)) lv --;
         if (cheatCode == 0 && Input.GetKeyDown(KeyCode.W)) cheatCode++;
         else if (cheatCode == 1 && Input.GetKeyDown(KeyCode.W)) cheatCode++;
         else if (cheatCode == 2 && Input.GetKeyDown(KeyCode.S)) cheatCode++;
@@ -77,7 +79,7 @@ public class Player : MonoBehaviour
         else if (cheatCode == 6 && Input.GetKeyDown(KeyCode.A)) cheatCode++;
         else if (cheatCode == 7 && Input.GetKeyDown(KeyCode.D)) cheatCode++;
         else if (cheatCode == 8 && Input.GetKeyDown(KeyCode.B)) cheatCode++;
-        else if (cheatCode == 9 && Input.GetKeyDown(KeyCode.A)) { Save.isCheat = true; Save.jumpTime = jumpTime = 0x3f3f3f; }
+        else if (cheatCode == 9 && Input.GetKeyDown(KeyCode.A)) { Save.isCheat = true; Save.jumpTime = jumpTime = 0x3f3f3f; cheatCode++; }
         //Movment
         float h = Input.GetAxis("Horizontal");
         transform.position += new Vector3(h * (speed+0.1f*lv) * Time.deltaTime, 0, 0);

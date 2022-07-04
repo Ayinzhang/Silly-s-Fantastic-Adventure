@@ -1,4 +1,4 @@
-# Sily-s-fantastic-adventure
+# Silly-s-fantastic-adventure
 
 **Unity版本2020.3.21**
 
