@@ -91,6 +91,7 @@
     <Compile Include="Assets\Present Level\Scripts\Items\Platform.cs" />
     <Compile Include="Assets\Past Level\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\Past Level\Scripts\Creature\Player_ForeChecker.cs" />
+    <Compile Include="Assets\Present Level\Scripts\Items\Trap.cs" />
     <Compile Include="Assets\Present Level\Scripts\Creatures\Piranha.cs" />
     <Compile Include="Assets\Past Level\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\Past Level\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
