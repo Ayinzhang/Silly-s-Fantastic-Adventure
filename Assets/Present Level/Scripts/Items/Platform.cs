@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
-    float speed = 3.0f;
+    float speed = 5.0f;
     float eps = 0.5f;
     int cnt = 1;
     bool isOn = false;
@@ -52,11 +52,11 @@ public class Platform : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Player")) isOn = true;//other.gameObject.transform.parent = transform;
+        if (other.gameObject.CompareTag("Player")) { speed = 3f; isOn = true; }//other.gameObject.transform.parent = transform;
     }
 
     void OnCollisionExit2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Player")) isOn = false;//other.gameObject.transform.parent = player_parent;
+        if (other.gameObject.CompareTag("Player")) { speed = 5f; isOn = false; }//other.gameObject.transform.parent = player_parent;
     }
 }

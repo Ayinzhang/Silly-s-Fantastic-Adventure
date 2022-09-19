@@ -14847,7 +14847,7 @@ GameObject:
   - component: {fileID: 1734897078}
   m_Layer: 0
   m_Name: Trap
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15920,7 +15920,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 899071907852469710, guid: adc1a546bd45d6849b2398f4f4aaacba, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: adc1a546bd45d6849b2398f4f4aaacba, type: 3}
 --- !u!1 &1816446597
 GameObject:

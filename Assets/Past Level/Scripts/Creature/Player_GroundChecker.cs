@@ -6,7 +6,7 @@ public class Player_GroundChecker : MonoBehaviour
 {
     void OnTriggerStay2D(Collider2D other)
     {
-        if (!Player.isDead &&other.CompareTag("Ground")) Player.isGround = true;
+        if (!Player.isDead && other.CompareTag("Ground")) Player.isGround = true;
     }
     
     void OnTriggerExit2D(Collider2D other)

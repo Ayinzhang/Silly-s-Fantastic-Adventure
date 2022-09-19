@@ -9,7 +9,7 @@ public class House : MonoBehaviour
 
     void Update()
     {
-        if(isDoor&&Input.GetKeyDown(KeyCode.W))
+        if(isDoor&&Player.move.y>0)
         {
             Save.lv = Player.lv; Player.jumpTime = Save.jumpTime;
             if (SceneManager.GetActiveScene().name == "Past Level") SceneManager.LoadScene("Present Level");
