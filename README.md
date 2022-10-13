@@ -7,3 +7,5 @@
 *支持键盘和手柄操作，希望玩的开心*
 
 B站速览：https://www.bilibili.com/video/BV1VW4y1m7ZM
+
+![image](https://i2.hdslb.com/bfs/archive/8f4623217ce05a2aadce3a2e74aa139b9389157e.jpg)
